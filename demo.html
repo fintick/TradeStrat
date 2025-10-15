@@ -364,6 +364,8 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -463,10 +465,15 @@
                     </div>
                     <div style="text-align: center; margin-top: 20px;">
                         <button class="btn btn-success" onclick="runCodeStrategy()">Run Strategy</button>
+                         
+                        <py-script>
+                            print("Running and testing your strategy from Python in HTML!")
+                        </py-script>
+                        
                     </div>
                 </div>
             </div>
-
+            
             <!-- Results Section -->
             <div class="results" id="results" style="display: none;">
                 <div class="results-header">
